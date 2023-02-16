@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Conveyor</string>
+    <string name="ip">IP</string>
+    <string name="enable">Включить</string>
+    <string name="disable">Выключить</string>
+    <string name="save">Сохранить</string>
+</resources>

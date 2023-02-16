@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edAddIp"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.6"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/ip"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/bSaveIp"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:onClick="onClickSaveIp"
+
+        android:text="@string/save"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:paddingStart="6dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/edAddIp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/bColorRed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:onClick="onClickColorRed"
+        android:background="@drawable/rectanglered"
+        android:layout_marginEnd="2dp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/edAddIp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/bColorGreen"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/bColorGreen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.25"
+        android:onClick="onClickColorGreen"
+        android:text=""
+        android:background="@drawable/rectanglegreen"
+        app:layout_constraintTop_toBottomOf="@+id/edAddIp"
+        app:layout_constraintLeft_toRightOf="@id/bColorRed"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/bColorYellow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangleyellow"
+        android:onClick="onClickColorYellow"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/bColorBlue"
+        app:layout_constraintTop_toBottomOf="@+id/bColorRed"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <Button
+        android:id="@+id/bColorBlue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangleblue"
+        android:onClick="onClickColorBlue"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintLeft_toRightOf="@id/bColorYellow"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bColorGreen"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <Button
+        android:id="@+id/bMain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button"
+        android:onClick="onClickMain"
+        android:text="@string/enable"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
