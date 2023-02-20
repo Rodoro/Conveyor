@@ -115,6 +115,7 @@ void loop()
         
         else 
           {
+            digitalWrite(motorPin, LOW);
             mDetected = 0;
           } 
 
@@ -326,7 +327,7 @@ void color() {
     Serial.println(" THIS IS ЗЕЛЕНЫЙ");
     delay(90);
     }
-  else if(blue < 80 && blue < red && blue < green){
+  else if(blue < 80 && blue < red && blue < green){  
     digitalWrite(motorPin, LOW);
     ++bSt;
     Serial.println(" THIS IS ГОЛУБОЙ");
