@@ -14,8 +14,7 @@ public class zakaz extends AppCompatActivity {
         setContentView(R.layout.activity_zakaz);
     }
     public void startNewActivityvinti(View vi){
-        Intent intentvinti = new Intent(this, vinti.class);
-        startActivity(intentvinti);
+        Intent intentvinti = new Intent(this, vinti.clas
     }
 
 }
