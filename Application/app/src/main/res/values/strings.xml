@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">Conveyor</string>
+    <string name="app_name">Робот-складовщик</string>
     <string name="ip">IP</string>
-    <string name="enable">Включить</string>
-    <string name="disable">Выключить</string>
+    <string name="enable">Заказать</string>
+    <string name="disable">Выбор заказа</string>
     <string name="save">Сохранить</string>
+    <string name="textvibor">Меню заказа</string>
 </resources>

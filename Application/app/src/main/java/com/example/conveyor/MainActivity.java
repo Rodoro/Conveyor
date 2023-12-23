@@ -32,69 +32,125 @@ public class MainActivity extends AppCompatActivity {
 
     private void staticMachine(){
         Button MainButton = findViewById(R.id.bMain);
-        Button RedButton = findViewById(R.id.bColorRed);
-        Button GreenButton = findViewById(R.id.bColorGreen);
-        Button YellowButton = findViewById(R.id.bColorYellow);
-        Button BlueButton = findViewById(R.id.bColorBlue);
+        Button ShurupiButton = findViewById(R.id.shurupi);
+        Button VintiButton = findViewById(R.id.vint);
+        Button GaykiButton = findViewById(R.id.gayki);
+        Button ProvodaButton = findViewById(R.id.Provoda);
+        Button Reykireyki = findViewById(R.id.reyki);
+        Button Pripoypripoy = findViewById(R.id.pripoy);
+        Button Gvozdiprovoda = findViewById(R.id.gvozdi);
+        Button MolotkiButton = findViewById(R.id.molotki);
+        Button ShesterniButton = findViewById(R.id.shesterni);
         if(value.charAt(0) == '1'){
-            MainButton.setText("Выключить");
+            MainButton.setText("Заказать");
         } else {
-            MainButton.setText("Включить");
+            MainButton.setText("Подготовка");
         }
         if(value.charAt(1) == '1'){
-            RedButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleredactive));
-            RedButton.setText("АКТИВНО");
+            ShurupiButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleredactive));
+            ShurupiButton.setText("АКТИВНО");
         } else{
-            RedButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectanglered));
-            RedButton.setText("");
+            ShurupiButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectanglered));
+            ShurupiButton.setText("");
         }
         if(value.charAt(2) == '1'){
-            GreenButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectanglegreenactive));
-            GreenButton.setText("АКТИВНО");
+            VintiButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectanglegreenactive));
+            VintiButton.setText("АКТИВНО");
         } else{
-            GreenButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectanglegreen));
-            GreenButton.setText("");
+            VintiButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectanglegreen));
+            VintiButton.setText("");
         }
         if(value.charAt(3) == '1'){
-            YellowButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleyellowactive));
-            YellowButton.setText("АКТИВНО");
+            GaykiButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleyellowactive));
+            GaykiButton.setText("АКТИВНО");
         } else{
-            YellowButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleyellow));
-            YellowButton.setText("");
+            GaykiButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleyellow));
+            GaykiButton.setText("");
         }
         if(value.charAt(4) == '1'){
-            BlueButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblueactive));
-            BlueButton.setText("АКТИВНО");
+            ProvodaButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblueactive));
+            ProvodaButton.setText("АКТИВНО");
         } else{
-            BlueButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblue));
-            BlueButton.setText("");
+            ProvodaButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblue));
+            ProvodaButton.setText("");
         }
+        if(value.charAt(5) == '1'){
+            Reykireyki.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblueactive));
+            Reykireyki.setText("АКТИВНО");
+        } else{
+            Reykireyki.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblue));
+            Reykireyki.setText("");
+        }
+        if(value.charAt(6) == '1'){
+            Pripoypripoy.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblueactive));
+            Pripoypripoy.setText("АКТИВНО");
+        } else{
+            Pripoypripoy.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblue));
+            Pripoypripoy.setText("");
+        }
+        if(value.charAt(7) == '1'){
+            Gvozdiprovoda.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblueactive));
+            Gvozdiprovoda.setText("АКТИВНО");
+        } else{
+            Gvozdiprovoda.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblue));
+            Gvozdiprovoda.setText("");
+        }
+        if(value.charAt(8) == '1'){
+            MolotkiButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblueactive));
+            MolotkiButton.setText("АКТИВНО");
+        } else{
+            MolotkiButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblue));
+            MolotkiButton.setText("");
+        }
+        if(value.charAt(9) == '1'){
+            ShesterniButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblueactive));
+            ShesterniButton.setText("АКТИВНО");
+        } else{
+            ShesterniButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangleblue));
+            ShesterniButton.setText("");
+        }
+
     }
 
-    public void onClickColorRed(View view) {
+    public void onClickshurupi(View view) {
+        post("a");
+    }
+
+    public void onClickvinti(View view) {
         post("b");
     }
 
-    public void onClickColorGreen(View view) {
+    public void onClickgayki(View view) {
         post("c");
     }
 
-    public void onClickColorYellow(View view) {
+    public void onClickProvoda(View view) {
         post("d");
     }
 
-    public void onClickColorBlue(View view) {
+    public void onClickreyki(View view) {
         post("e");
     }
-
+    public void onClickpripoy(View view) {
+        post("f");
+    }
+    public void onClickgvozdi(View view) {
+        post("g");
+    }
+    public void onClickmolotki(View view) {
+        post("h");
+    }
+    public void onClickshesterni(View view) {
+        post("i");
+    }
     public void onClickMain(View view) {
-        post("a");
+        post("j");
     }
 
     public void onClickSaveIp(View view){
         EditText editText = findViewById(R.id.edAddIp);
         if(editText.getText().toString().equals("")) {
-            Toast toast = Toast.makeText(this, "Вы не ввели IP",Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, "Вы не ввели IP!",Toast.LENGTH_LONG);
             toast.show();
         } else {
             saveIp(editText.getText().toString());
@@ -109,11 +165,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void getIp(){
         var ip = pref.getString("ip", "");
-        if(ip != null){
-            if(ip != "") {
-                EditText editText = findViewById(R.id.edAddIp);
-                editText.setText(ip);
-            }
+        if (ip != "") {
+            EditText editText = findViewById(R.id.edAddIp);
+            editText.setText(ip);
         }
     }
 

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vibortext"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#F4511E"
+    tools:context=".zakaz">
+
+    <Button
+        android:id="@+id/Шестеренки"
+        android:layout_width="285sp"
+        android:layout_height="85sp"
+        android:backgroundTint="#FD440A"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="startNewActivityvinti"
+        android:text="@string/ip"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        tools:text="Шестеренки"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/Izolenta"
+        android:layout_width="285sp"
+        android:layout_height="85sp"
+        android:backgroundTint="#FD440A"
+        android:text="izobutton"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Шестеренки"
+        app:layout_constraintVertical_bias="0.095"
+        tools:text="Изолента" />
+
+    <Button
+        android:id="@+id/vinti"
+        android:layout_width="285sp"
+        android:layout_height="85sp"
+        android:backgroundTint="#FD440A"
+        android:text="Винты"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Izolenta"
+        app:layout_constraintVertical_bias="0.207"
+        tools:text="Винты" />
+
+    <EditText
+        android:id="@+id/textvibor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Меню заказа"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/obratnoinmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFB300"
+        android:text="Вернуться на главную"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
